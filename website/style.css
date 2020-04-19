@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size-adjust: auto;
+}
+.logo {
+  flex-basis: 15%;
+   margin: 0;
+}
+.logo img{
+  padding: 35px 35px;
+  width: 275px;
+  height: 275px;
+  transition: transform .9s ease;
+  overflow: hidden;
+}
+.logo img:hover{
+  transform: scale(1.35)
+}
+.navigation-links{
+  flex: 1;
+  text-align: right;
+  margin-top: -205px;
+  margin-right: 106px;
+  padding-right: 15px;
+
+
+/* added position, overflow, background ---///
+  position: fixed;
+  overflow: hidden;
+  background: transparent;
+  test*/
+}
+.navigation-links ul {
+    display: inline-flex;
+}
+.navigation-links ul li {
+  margin: 10px 9px;;
+  margin-top: 14px;
+  padding: 6px 5px;
+  font: Montserrat;
+  font-weight: normal;
+  position: relative;
+  list-style: none;
+  font-size: 100%;
+  word-spacing: 0px;
+  overflow: hidden;
+  z-index: 3;
+}
+@media screen and (max-width: 1580px) {
+  .navigation-links ul li {
+      font-size: 0.75rem;
+      margin: 10px 6px;
+      word-spacing: 0px;
+      padding: 6px 3px;
+  }
+  .navigation-links{
+    margin-right: 74px;
+    margin-top: -180px;
+  }
+  .logo img{
+    width: 230px;
+    height: 230px;
+  }
+
+}
+@media screen and (max-width: 1220px) {
+  .navigation-links ul li {
+      font-size: 0.65rem;
+      margin: 10px 5px;
+      word-spacing: 0px;
+      padding: 6px 2px;
+  }
+  .navigation-links{
+    margin-right: 74px;
+    margin-top: -163px;
+  }
+  .logo img{
+    width: 205px;
+    height: 205px;
+  }
+
+}
+
+.navigation-links ul li a{
+  color: #fff;
+  text-decoration:none;
+}
+.navigation-links ul li a:hover{
+  font-weight: bold;
+
+}
+
+.gift img{
+  height: 54px;
+  width: 872x;
+  float: right;
+  margin-top: -86px;
+  margin-left: 10px;
+  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+.general {
+  z-index: 2;
+}
+/* zindex */
+.general #photo1{
+  margin-left: 5%;
+}
+.toprow img{
+  width: 30%;
+  position: relative;
+  padding-top: 10px;
+  margin-top: 85px;
+  padding: 0.4%;
+  z-index: 2;
+}
+.middlerow img{
+  width: 30%;
+  position relative;
+  padding: 0.4%;
+}
+.general #photo4{
+  margin-left: 5%;
+}
+.bottomrow img{
+  width: 30%;
+  position: relative;
+  padding: 0.4%;
+}
+.general #photo7{
+  margin-left: 5%;
+}
+.general h1{
+  font-size: 250%;
+  margin-top: 4%;
+  margin-left: -0.8%;
+  padding: 0.8%;
+}
+.information{
+  font-size: 105%;
+  margin-left: 5.9%;
+  padding-bottom: 100px;
+  margin-right: 5%;
+  text-align: justify;
+  font-weight: 500;
+}
+.information ul{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.information ul li{
+  margin-top: 0.35em;
+}
+.information a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+.contactform {
+  display: block;
+  padding-bottom: 10%;
+  margin-top: 1%;
+  padding-left: 35%;
+}
+.contactform h2{
+  font-size: 225%;
+  padding-bottom: 0.5%;
+}
+.contactform label {
+  padding-top: 0.5%;
+  margin-bottom: 0.7%;
+  
+}
+.contactform input{
+  width: 40%;
+  height: 3%;
+}
+.contactform textarea{
+  width: 40%;
+  height: 12%;
+}
+
+/* overflow changed from hidden to visible to allow scrolling - note*/
+.main{
+  width: 100%;
+  height: auto;
+  color: fff;
+  background: linear-gradient(-60deg, #FFC300, #FF8166, #0087FF, #F78AFF);
+  background-size: 400% 400%;
+  position: relative;
+  overflow: visible;
+  animation: changebackground 32s ease-in-out infinite;
+}
+label, input, textarea{
+  display: block;
+}
+@keyframes changebackground {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
